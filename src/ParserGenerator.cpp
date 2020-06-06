@@ -20,8 +20,13 @@ void ParserGenerator::generateParsingTable()
             calcFollow(lhs);
        }
     }
-//2-compute follow of all nonTerminals
-    //calcFollow();
+    //2-compute follow of all nonTerminals
+    for (auto lhs : grammer)
+    {
+       if(!lhs->followComputed()){
+            calcFollow(lhs);
+       }
+    }
 //3-construct parsing table
     addToTable();
 
@@ -115,7 +120,7 @@ void ParserGenerator::calcFollow(Rule* lhs)
             std::vector<Rule*>::iterator it = find(prod.begin(), prod.end(), lhs);
             if(it != prod.end()){
                 if(distance(prod.begin(), it) == prod.size() - 1){
-                    if(!this->grammer.at(i)->followComputed() && !this->grammer.at(i)->checkVisited()){
+                    if(!this->grammer.at(i)->followComputed() && this->grammer.at(i)->checkVisited() < this->grammer.size()){
                         this->grammer.at(i)->markVisited();
                         calcFollow(this->grammer.at(i));
                     }
@@ -133,7 +138,7 @@ void ParserGenerator::calcFollow(Rule* lhs)
                         vector<bool> nullable = r->getNullable();
                         std::vector<bool>::iterator it = find(nullable.begin(), nullable.end(), true);
                         if(it != nullable.end()){
-                            if(!this->grammer.at(i)->followComputed() && !this->grammer.at(i)->checkVisited()){
+                            if(!this->grammer.at(i)->followComputed() && this->grammer.at(i)->checkVisited() < this->grammer.size()){
                                 this->grammer.at(i)->markVisited();
                                 calcFollow(this->grammer.at(i));
                             }

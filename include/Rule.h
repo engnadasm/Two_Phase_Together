@@ -34,7 +34,7 @@ class Rule
         void markFirst();
         bool followComputed();
         void markFollow();
-        bool checkVisited();
+        int checkVisited();
         void markVisited();
 
     protected:
@@ -48,7 +48,7 @@ class Rule
         string name;
         bool calcFirst;
         bool calcFollow;
-        bool visited;
+        int visited;
 
 };
 

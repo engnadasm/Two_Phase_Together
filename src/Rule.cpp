@@ -4,6 +4,7 @@ Rule::Rule(string name)
 {
     this->name = name;
     this->terminal = false;
+    this->visited = 0;
 }
 
 void Rule::clearProductions(){
@@ -105,9 +106,9 @@ bool Rule::followComputed(){
 void Rule::markFollow(){
     calcFollow = true;
 }
-bool Rule::checkVisited(){
+int Rule::checkVisited(){
     return visited;
 }
 void Rule::markVisited(){
-    visited = true;
+    visited++;
 }

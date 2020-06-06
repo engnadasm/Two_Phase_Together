@@ -1,0 +1,102 @@
+1- TERM_dash_1 :
+relop : synch  ; : synch  num : FACTOR TERM_dash_1_1  id : FACTOR TERM_dash_1_1  addop : synch  ) : synch  ( : FACTOR TERM_dash_1_1  
+2- TERM_dash_1_1 :
+; : TERM_dash  addop : TERM_dash  ) : TERM_dash  relop : TERM_dash  mulop : TERM_dash  
+3- SIMPLE_EXPRESSION_dash_1 :
+relop : synch  ; : synch  num : TERM SIMPLE_EXPRESSION_dash_1_1  id : TERM SIMPLE_EXPRESSION_dash_1_1  ) : synch  ( : TERM SIMPLE_EXPRESSION_dash_1_1  
+4- SIMPLE_EXPRESSION_dash_1_1 :
+relop : SIMPLE_EXPRESSION_dash  ; : SIMPLE_EXPRESSION_dash  ) : SIMPLE_EXPRESSION_dash  addop : SIMPLE_EXPRESSION_dash  
+5- STATEMENT_LIST_dash_1 :
+$ : STATEMENT_LIST_dash  while : STATEMENT_LIST_dash  if : STATEMENT_LIST_dash  int : STATEMENT_LIST_dash  id : STATEMENT_LIST_dash  float : STATEMENT_LIST_dash  
+6- SIMPLE_EXPRESSION :
+relop : synch  ; : synch  + : SIGN SIMPLE_EXPRESSION_2  - : SIGN SIMPLE_EXPRESSION_2  num : TERM SIMPLE_EXPRESSION_1  id : TERM SIMPLE_EXPRESSION_1  ) : synch  ( : TERM SIMPLE_EXPRESSION_1  
+7- IF_1_1_1_1_1_1_1_1_1_1 :
+while : synch  if : synch  int : synch  id : synch  float : synch  $ : synch  } : }  
+8- EXPRESSION_1 :
+relop : relop EXPRESSION_1_1  ; : \L  ) : \L  
+9- DECLARATION_1_1 :
+} : synch  while : synch  if : synch  int : synch  id : synch  float : synch  $ : synch  ; : ;  
+10- SIMPLE_EXPRESSION_2 :
+relop : synch  ; : synch  num : TERM SIMPLE_EXPRESSION_2_1  id : TERM SIMPLE_EXPRESSION_2_1  ) : synch  ( : TERM SIMPLE_EXPRESSION_2_1  
+11- TERM :
+relop : synch  ; : synch  num : FACTOR TERM_1  id : FACTOR TERM_1  addop : synch  ) : synch  ( : FACTOR TERM_1  
+12- METHOD_BODY :
+$ : synch  while : STATEMENT_LIST  if : STATEMENT_LIST  int : STATEMENT_LIST  id : STATEMENT_LIST  float : STATEMENT_LIST  
+13- STATEMENT_LIST :
+$ : synch  while : STATEMENT STATEMENT_LIST_1  if : STATEMENT STATEMENT_LIST_1  int : STATEMENT STATEMENT_LIST_1  id : STATEMENT STATEMENT_LIST_1  float : STATEMENT STATEMENT_LIST_1  
+14- IF_1 :
+} : synch  while : synch  int : synch  id : synch  float : synch  $ : synch  if : synch  ( : ( IF_1_1  
+15- WHILE_1_1_1_1 :
+} : synch  while : synch  if : synch  int : synch  id : synch  float : synch  $ : synch  { : { WHILE_1_1_1_1_1  
+16- TERM_dash :
+; : \L  addop : \L  ) : \L  relop : \L  mulop : mulop TERM_dash_1  
+17- STATEMENT :
+} : synch  $ : synch  while : WHILE  if : IF  id : ASSIGNMENT  int : DECLARATION  float : DECLARATION  
+18- SIMPLE_EXPRESSION_dash :
+relop : \L  ; : \L  ) : \L  addop : addop SIMPLE_EXPRESSION_dash_1  
+19- FACTOR :
+relop : synch  mulop : synch  ; : synch  addop : synch  ) : synch  ( : ( FACTOR_3  num : num  id : id  
+20- ASSIGNMENT_1_1 :
+} : synch  ( : EXPRESSION ASSIGNMENT_1_1_1  if : synch  num : EXPRESSION ASSIGNMENT_1_1_1  while : synch  + : EXPRESSION ASSIGNMENT_1_1_1  id : EXPRESSION ASSIGNMENT_1_1_1  int : synch  - : EXPRESSION ASSIGNMENT_1_1_1  $ : synch  float : synch  
+21- STATEMENT_LIST_dash :
+$ : \L  while : STATEMENT STATEMENT_LIST_dash_1  if : STATEMENT STATEMENT_LIST_dash_1  int : STATEMENT STATEMENT_LIST_dash_1  id : STATEMENT STATEMENT_LIST_dash_1  float : STATEMENT STATEMENT_LIST_dash_1  
+22- DECLARATION :
+} : synch  while : synch  if : synch  $ : synch  id : synch  int : PRIMITIVE_TYPE DECLARATION_1  float : PRIMITIVE_TYPE DECLARATION_1  
+23- PRIMITIVE_TYPE :
+float : float  id : synch  int : int  
+24- IF :
+} : synch  while : synch  int : synch  id : synch  float : synch  $ : synch  if : if IF_1  
+25- STATEMENT_LIST_1 :
+$ : STATEMENT_LIST_dash  while : STATEMENT_LIST_dash  if : STATEMENT_LIST_dash  int : STATEMENT_LIST_dash  id : STATEMENT_LIST_dash  float : STATEMENT_LIST_dash  
+26- ASSIGNMENT :
+} : synch  while : synch  if : synch  float : synch  $ : synch  int : synch  id : id ASSIGNMENT_1  
+27- IF_1_1_1_1_1_1_1 :
+} : synch  while : synch  if : synch  int : synch  id : synch  float : synch  $ : synch  else : else IF_1_1_1_1_1_1_1_1  
+28- IF_1_1_1_1_1_1_1_1 :
+} : synch  while : synch  if : synch  int : synch  id : synch  float : synch  $ : synch  { : { IF_1_1_1_1_1_1_1_1_1  
+29- EXPRESSION :
+; : synch  id : SIMPLE_EXPRESSION EXPRESSION_1  num : SIMPLE_EXPRESSION EXPRESSION_1  - : SIMPLE_EXPRESSION EXPRESSION_1  + : SIMPLE_EXPRESSION EXPRESSION_1  ) : synch  ( : SIMPLE_EXPRESSION EXPRESSION_1  
+30- IF_1_1_1 :
+} : synch  while : synch  int : synch  id : synch  float : synch  $ : synch  if : synch  ) : ) IF_1_1_1_1  
+31- DECLARATION_1 :
+} : synch  while : synch  if : synch  float : synch  $ : synch  int : synch  id : id DECLARATION_1_1  
+32- SIGN :
+id : synch  ( : synch  num : synch  - : -  + : +  
+33- IF_1_1_1_1_1_1 :
+while : synch  if : synch  int : synch  id : synch  float : synch  $ : synch  } : } IF_1_1_1_1_1_1_1  
+34- FACTOR_3 :
+relop : synch  mulop : synch  ; : synch  id : EXPRESSION FACTOR_3_1  num : EXPRESSION FACTOR_3_1  - : EXPRESSION FACTOR_3_1  + : EXPRESSION FACTOR_3_1  addop : synch  ) : synch  ( : EXPRESSION FACTOR_3_1  
+35- SIMPLE_EXPRESSION_1 :
+relop : SIMPLE_EXPRESSION_dash  ; : SIMPLE_EXPRESSION_dash  ) : SIMPLE_EXPRESSION_dash  addop : SIMPLE_EXPRESSION_dash  
+36- IF_1_1_1_1 :
+} : synch  while : synch  if : synch  int : synch  id : synch  float : synch  $ : synch  { : { IF_1_1_1_1_1  
+37- IF_1_1 :
+} : synch  ( : EXPRESSION IF_1_1_1  if : synch  num : EXPRESSION IF_1_1_1  while : synch  + : EXPRESSION IF_1_1_1  id : EXPRESSION IF_1_1_1  int : synch  - : EXPRESSION IF_1_1_1  $ : synch  float : synch  
+38- IF_1_1_1_1_1 :
+} : synch  $ : synch  while : STATEMENT IF_1_1_1_1_1_1  if : STATEMENT IF_1_1_1_1_1_1  int : STATEMENT IF_1_1_1_1_1_1  id : STATEMENT IF_1_1_1_1_1_1  float : STATEMENT IF_1_1_1_1_1_1  
+39- WHILE_1_1_1_1_1_1 :
+} : }  
+40- WHILE :
+} : synch  if : synch  int : synch  id : synch  float : synch  $ : synch  while : while WHILE_1  
+41- WHILE_1 :
+} : synch  while : synch  int : synch  id : synch  float : synch  $ : synch  if : synch  ( : ( WHILE_1_1  
+42- WHILE_1_1_1_1_1 :
+while : STATEMENT WHILE_1_1_1_1_1_1  if : STATEMENT WHILE_1_1_1_1_1_1  int : STATEMENT WHILE_1_1_1_1_1_1  id : STATEMENT WHILE_1_1_1_1_1_1  float : STATEMENT WHILE_1_1_1_1_1_1  
+43- WHILE_1_1_1 :
+} : synch  while : synch  int : synch  id : synch  float : synch  $ : synch  if : synch  ) : ) WHILE_1_1_1_1  
+44- TERM_1 :
+; : TERM_dash  addop : TERM_dash  ) : TERM_dash  relop : TERM_dash  mulop : TERM_dash  
+45- WHILE_1_1 :
+} : synch  ( : EXPRESSION WHILE_1_1_1  if : synch  num : EXPRESSION WHILE_1_1_1  while : synch  + : EXPRESSION WHILE_1_1_1  id : EXPRESSION WHILE_1_1_1  int : synch  - : EXPRESSION WHILE_1_1_1  $ : synch  float : synch  
+46- ASSIGNMENT_1_1_1 :
+} : synch  while : synch  if : synch  int : synch  id : synch  float : synch  $ : synch  ; : ;  
+47- IF_1_1_1_1_1_1_1_1_1 :
+} : synch  $ : synch  while : STATEMENT IF_1_1_1_1_1_1_1_1_1_1  if : STATEMENT IF_1_1_1_1_1_1_1_1_1_1  int : STATEMENT IF_1_1_1_1_1_1_1_1_1_1  id : STATEMENT IF_1_1_1_1_1_1_1_1_1_1  float : STATEMENT IF_1_1_1_1_1_1_1_1_1_1  
+48- ASSIGNMENT_1 :
+} : synch  while : synch  int : synch  id : synch  float : synch  $ : synch  if : synch  assign : assign ASSIGNMENT_1_1  
+49- EXPRESSION_1_1 :
+; : synch  id : SIMPLE_EXPRESSION  num : SIMPLE_EXPRESSION  - : SIMPLE_EXPRESSION  + : SIMPLE_EXPRESSION  ) : synch  ( : SIMPLE_EXPRESSION  
+50- SIMPLE_EXPRESSION_2_1 :
+relop : SIMPLE_EXPRESSION_dash  ; : SIMPLE_EXPRESSION_dash  ) : SIMPLE_EXPRESSION_dash  addop : SIMPLE_EXPRESSION_dash  
+51- FACTOR_3_1 :
+relop : synch  mulop : synch  ; : synch  addop : synch  ) : )  

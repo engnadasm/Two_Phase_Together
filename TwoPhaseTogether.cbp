@@ -32,7 +32,36 @@
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 		</Compiler>
+		<Unit filename="include/DFA.h" />
+		<Unit filename="include/DFADriver.h" />
+		<Unit filename="include/DFAMinimzer.h" />
+		<Unit filename="include/Derivation.h" />
+		<Unit filename="include/ErrorMessages.h" />
+		<Unit filename="include/GrammerOptimizer.h" />
+		<Unit filename="include/GrammerParser.h" />
+		<Unit filename="include/NDConverter.h" />
+		<Unit filename="include/NFA.h" />
+		<Unit filename="include/Parser.h" />
+		<Unit filename="include/ParserGenerator.h" />
+		<Unit filename="include/RDB.h" />
+		<Unit filename="include/Rule.h" />
+		<Unit filename="include/SymbolTable.h" />
+		<Unit filename="include/SymbolTableEntry.h" />
 		<Unit filename="main.cpp" />
+		<Unit filename="src/DFA.cpp" />
+		<Unit filename="src/DFADriver.cpp" />
+		<Unit filename="src/DFAMinimzer.cpp" />
+		<Unit filename="src/Derivation.cpp" />
+		<Unit filename="src/GrammerOptimizer.cpp" />
+		<Unit filename="src/GrammerParser.cpp" />
+		<Unit filename="src/NDConverter.cpp" />
+		<Unit filename="src/NFA.cpp" />
+		<Unit filename="src/Parser.cpp" />
+		<Unit filename="src/ParserGenerator.cpp" />
+		<Unit filename="src/RDB.cpp" />
+		<Unit filename="src/Rule.cpp" />
+		<Unit filename="src/SymbolTable.cpp" />
+		<Unit filename="src/SymbolTableEntry.cpp" />
 		<Extensions>
 			<code_completion />
 			<envvars />

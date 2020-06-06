@@ -359,3 +359,183 @@
 	"../include/SymbolTableEntry.h"
 	<string>
 
+1589539556 source:d:\csed\3rdyear\2ndsemester\compilers\phase1 & 2\two_phase_together\main.cpp
+	<iostream>
+	"include/Parser.h"
+	"include/NDConverter.h"
+	"include/DFAMinimzer.h"
+	"include/DFADriver.h"
+	<set>
+	<vector>
+	<map>
+	<string>
+	"include/GrammerParser.h"
+	"include/GrammerOptimizer.h"
+	"include/ParserGenerator.h"
+	"include/Derivation.h"
+
+1589539556 d:\csed\3rdyear\2ndsemester\compilers\phase1 & 2\two_phase_together\include\parser.h
+	<string>
+	<vector>
+	<unordered_map>
+	<regex>
+	<iostream>
+	<fstream>
+	"NFA.h"
+	"RDB.h"
+
+1589539556 d:\csed\3rdyear\2ndsemester\compilers\phase1 & 2\two_phase_together\include\nfa.h
+	<set>
+	<vector>
+	<map>
+	<unordered_map>
+	<string>
+	<utility>
+
+1589539556 d:\csed\3rdyear\2ndsemester\compilers\phase1 & 2\two_phase_together\include\rdb.h
+	<vector>
+	<algorithm>
+	<string>
+	<iostream>
+	"NFA.h"
+
+1589539556 d:\csed\3rdyear\2ndsemester\compilers\phase1 & 2\two_phase_together\include\ndconverter.h
+	"../include/NFA.h"
+	"../include/DFA.h"
+	<iostream>
+
+1589539556 d:\csed\3rdyear\2ndsemester\compilers\phase1 & 2\two_phase_together\include\dfa.h
+	<set>
+	<string>
+	<unordered_map>
+
+1589539556 d:\csed\3rdyear\2ndsemester\compilers\phase1 & 2\two_phase_together\include\dfaminimzer.h
+	"DFA.h"
+	<set>
+	<vector>
+	<unordered_map>
+	<map>
+	<iostream>
+	<fstream>
+
+1589539556 d:\csed\3rdyear\2ndsemester\compilers\phase1 & 2\two_phase_together\include\dfadriver.h
+	<string>
+	<vector>
+	"DFA.h"
+	"SymbolTable.h"
+
+1589539556 d:\csed\3rdyear\2ndsemester\compilers\phase1 & 2\two_phase_together\include\symboltable.h
+	<string>
+	"SymbolTableEntry.h"
+	<string>
+	<unordered_map>
+
+1589539556 d:\csed\3rdyear\2ndsemester\compilers\phase1 & 2\two_phase_together\include\symboltableentry.h
+	<string>
+
+1589539556 d:\csed\3rdyear\2ndsemester\compilers\phase1 & 2\two_phase_together\include\grammerparser.h
+	<string>
+	<vector>
+	<unordered_map>
+	<iostream>
+	<fstream>
+	"Rule.h"
+
+1589550355 d:\csed\3rdyear\2ndsemester\compilers\phase1 & 2\two_phase_together\include\rule.h
+	<string>
+	<set>
+	<vector>
+	<algorithm>
+	<iostream>
+
+1589539556 d:\csed\3rdyear\2ndsemester\compilers\phase1 & 2\two_phase_together\include\grammeroptimizer.h
+	<vector>
+	<string>
+	<iostream>
+	"Rule.h"
+
+1589539556 d:\csed\3rdyear\2ndsemester\compilers\phase1 & 2\two_phase_together\include\parsergenerator.h
+	<string>
+	<vector>
+	<unordered_map>
+	<set>
+	<algorithm>
+	"../include/Rule.h"
+
+1589539556 d:\csed\3rdyear\2ndsemester\compilers\phase1 & 2\two_phase_together\include\derivation.h
+	<iostream>
+	<queue>
+	<stack>
+	<set>
+	<string>
+	<vector>
+	<unordered_map>
+	"../include/Rule.h"
+
+1589539556 source:d:\csed\3rdyear\2ndsemester\compilers\phase1 & 2\two_phase_together\src\derivation.cpp
+	"../include/Derivation.h"
+	<fstream>
+
+1589539556 source:d:\csed\3rdyear\2ndsemester\compilers\phase1 & 2\two_phase_together\src\dfa.cpp
+	"../include/DFA.h"
+	<fstream>
+	<iostream>
+
+1589539556 source:d:\csed\3rdyear\2ndsemester\compilers\phase1 & 2\two_phase_together\src\dfadriver.cpp
+	"../include/DFADriver.h"
+	<fstream>
+	"../include/Derivation.h"
+	"../include/ErrorMessages.h"
+
+1589539556 d:\csed\3rdyear\2ndsemester\compilers\phase1 & 2\two_phase_together\include\errormessages.h
+	<iostream>
+
+1589539556 source:d:\csed\3rdyear\2ndsemester\compilers\phase1 & 2\two_phase_together\src\dfaminimzer.cpp
+	"../include/DFAMinimzer.h"
+	"../include/DFA.h"
+	<set>
+	<string>
+	<vector>
+	<algorithm>
+	<unordered_map>
+	<map>
+
+1589539556 source:d:\csed\3rdyear\2ndsemester\compilers\phase1 & 2\two_phase_together\src\grammeroptimizer.cpp
+	"../include/GrammerOptimizer.h"
+
+1589539556 source:d:\csed\3rdyear\2ndsemester\compilers\phase1 & 2\two_phase_together\src\grammerparser.cpp
+	"../include/GrammerParser.h"
+
+1589539556 source:d:\csed\3rdyear\2ndsemester\compilers\phase1 & 2\two_phase_together\src\ndconverter.cpp
+	"../include/NDConverter.h"
+	<iostream>
+	<Vector>
+	<queue>
+	<bits/stdc++.h>
+
+1589539556 source:d:\csed\3rdyear\2ndsemester\compilers\phase1 & 2\two_phase_together\src\nfa.cpp
+	"../include/NFA.h"
+	<iostream>
+
+1589539556 source:d:\csed\3rdyear\2ndsemester\compilers\phase1 & 2\two_phase_together\src\parser.cpp
+	"../include/Parser.h"
+	<iostream>
+
+1589539556 source:d:\csed\3rdyear\2ndsemester\compilers\phase1 & 2\two_phase_together\src\rdb.cpp
+	"../include/RDB.h"
+
+1589550271 source:d:\csed\3rdyear\2ndsemester\compilers\phase1 & 2\two_phase_together\src\rule.cpp
+	"../include/Rule.h"
+
+1589539556 source:d:\csed\3rdyear\2ndsemester\compilers\phase1 & 2\two_phase_together\src\symboltable.cpp
+	"../include/SymbolTable.h"
+
+1589539556 source:d:\csed\3rdyear\2ndsemester\compilers\phase1 & 2\two_phase_together\src\symboltableentry.cpp
+	"../include/SymbolTableEntry.h"
+	<string>
+
+1589550332 source:d:\csed\3rdyear\2ndsemester\compilers\phase1 & 2\two_phase_together\src\parsergenerator.cpp
+	"../include/ParserGenerator.h"
+	<fstream>
+	<iostream>
+
